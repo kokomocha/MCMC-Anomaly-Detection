@@ -1,6 +1,21 @@
 # Markov Chain Monte Carlo for designing Anomaly Detection Models 
-![Metropolis-Hastings demo](https://upload.wikimedia.org/wikipedia/commons/d/de/Flowchart-of-Metropolis-Hastings-M-H-algorithm-for-the-parameter-estimation-using-the.png)
+
+## This Repository
+**This repository contains the 3 Reference Papers used to design and propose Anomaly detection models for Data Center Cooling Systems in 2019-2020. This approach had 
+also been a pre-cursor to exploring a Reinforcement Learning Model.**
+
+A Data Center has to maintain fixed range of temperatures, typically 18-22 deg celcius for optimal functioning of servers. Also, maximizing Energy Efficency 
+is still considered a great challenge despite tracking and predicting server loads, DC aisle temperatures and Airflows. This stems due the unsolved Physics
+problem of Sequential Hot air-Cold air interactions at macro-scale which lead to formation of localized "Hot Spots".
+
+In the specific Cooling Audit case, Markov Chain Monte Carlo was used to predict sequential Markov Processes influencing Hot Spot Creation for the Cooling Layout 
+and Operational Machines scenarios. Based on sensor data, probaabilities were inferred from priors to check against posterior probabalities of ideal scenaries to 
+tag the state as an anomaly.
+</br>
+
 ## What is MCMC?
+![Metropolis-Hastings demo](https://upload.wikimedia.org/wikipedia/commons/d/de/Flowchart-of-Metropolis-Hastings-M-H-algorithm-for-the-parameter-estimation-using-the.png)
+
 A Markov chain is a sequence of random states where the probability of moving to the next state depends only on the current state (the Markov property). Monte Carlo 
 methods use repeated random sampling to approximate numerical results, such as integrals. MCMC combines this approach with the structure of a Markov chain to sample 
 from the target distribution effectively and explore the target distribution iteratively. Markov Chain Monte Carlo (MCMC) is a class of algorithms used to sample from 
@@ -15,15 +30,3 @@ typical state, MCMC helps estimate the likelihood of observed data points. Low-p
 This approach is particularly effective in complex systems where normal behavior cannot be defined through simple thresholds or fixed rules, such as in financial 
 transactions, network traffic, or sensor data. MCMC-based anomaly detection is robust to noise and adaptable to dynamic environments, as it leverages probabilistic 
 reasoning to handle uncertainty and variability.
-
-## This Repository
-**This repository contains the 3 Reference Papers used to design and propose Anomaly detection models for Data Center Cooling Systems in 2019-2020. This approach had 
-also been a pre-cursor to exploring a Reinforcement Learning Model.**
-
-A Data Center has to maintain fixed range of temperatures, typically 18-22 deg celcius for optimal functioning of servers. Also, maximizing Energy Efficency 
-is still considered a great challenge despite tracking and predicting server loads, DC aisle temperatures and Airflows. This stems due the unsolved Physics
-problem of Sequential Hot air-Cold air interactions at macro-scale which lead to formation of localized "Hot Spots".
-
-In the specific Cooling Audit case, Markov Chain Monte Carlo was used to predict sequential Markov Processes influencing Hot Spot Creation for the Cooling Layout 
-and Operational Machines scenarios. Based on sensor data, probaabilities were inferred from priors to check against posterior probabalities of ideal scenaries to 
-tag the state as an anomaly.
