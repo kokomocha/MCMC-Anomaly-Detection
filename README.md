@@ -1,7 +1,12 @@
 # Markov Chain Monte Carlo for designing Anomaly Detection Models 
 
 ## This Repository
-**This repository contains the 3 Reference Papers used to design and propose Anomaly detection models for Data Center Cooling Systems in 2019-2020. This approach had 
+<figure style="text-align: center;">
+    <img height="350" src="https://www.akcp.com/wp-content/uploads/2021/05/6sigmafm_blog-1.png" alt="Hot Spot CFD" 
+      title="Hot Spot CFD" style="margin-right: 10px;" />
+</figure>
+
+**This repository contains the 3 Reference Papers used to design and propose Anomaly detection models for Data Center Cooling Systems in 2020-2021. This approach had 
 also been a pre-cursor to exploring a Reinforcement Learning Model.**
 
 A Data Center has to maintain fixed range of temperatures, typically 18-22 deg celcius for optimal functioning of servers. Also, maximizing Energy Efficency 
@@ -14,7 +19,10 @@ tag the state as an anomaly.
 </br>
 
 ## What is MCMC?
-![Metropolis-Hastings demo](https://upload.wikimedia.org/wikipedia/commons/d/de/Flowchart-of-Metropolis-Hastings-M-H-algorithm-for-the-parameter-estimation-using-the.png)
+<figure style="text-align: center;">
+    <img height="300" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flowchart-of-Metropolis-Hastings-M-H-algorithm-for-the-parameter-estimation-using-the.png" 
+      alt="Metropolis-Hastings demo" title="Metropolis-Hastings demo" style="margin-right: 10px;" />
+</figure>
 
 A Markov chain is a sequence of random states where the probability of moving to the next state depends only on the current state (the Markov property). Monte Carlo 
 methods use repeated random sampling to approximate numerical results, such as integrals. MCMC combines this approach with the structure of a Markov chain to sample 
